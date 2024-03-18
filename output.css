@@ -1,0 +1,608 @@
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+.btn-blue {
+  box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.btn-blue:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+.edit-btn {
+  box-sizing: border-box;
+  width: 3rem;
+  height: 3rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  border-radius: 1rem;
+  background-color: transparent;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.edit-btn.edit-mode {
+  z-index: 10;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  animation-name: bounce-pause;
+  animation-duration: 2.0s;
+  animation-iteration-count: infinite;
+  &::before {
+    content: '✎';
+  }
+  &::before {
+    position: absolute;
+  }
+  &::before {
+    top: 0.5rem;
+  }
+  &::before {
+    right: -0.375rem;
+  }
+  &::before {
+    z-index: -10;
+  }
+  &::before {
+    width: 3rem;
+    height: 3rem;
+  }
+  &::before {
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity));
+  }
+  &::before {
+    --tw-shadow-color: #f472b6;
+    --tw-shadow: var(--tw-shadow-colored);
+  }
+  &::before {
+    text-shadow: 0rem 0rem 0.5rem #f472b6;
+  }
+}
+
+.btn-red {
+  position: relative;
+  margin: 0px;
+  box-sizing: content-box;
+  min-height: 2rem;
+  min-width: 2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  border-radius: 9999px;
+  border-width: 2px;
+  border-color: transparent;
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.btn-red:hover {
+  margin: 0px;
+  border-width: 1px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(252 165 165 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.btn-red {
+  &::after {
+    position: absolute;
+  }
+  &::after {
+    left: 0px;
+  }
+  &::after {
+    top: 0px;
+  }
+  &::after {
+    z-index: 10;
+  }
+  &::after {
+    height: 100%;
+  }
+  &::after {
+    width: 100%;
+  }
+  &::after {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  &::after {
+    content: 'x';
+  }
+  &::before {
+    position: absolute;
+  }
+  &::before {
+    left: 0px;
+  }
+  &::before {
+    top: 0.375rem;
+  }
+  &::before {
+    z-index: 0;
+  }
+  &::before {
+    height: 100%;
+  }
+  &::before {
+    width: 100%;
+  }
+  &::before {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
+  &:hover::before {
+    opacity: 0.5;
+  }
+  &::before {
+    transform: scale(132%);
+    content: 'x';
+  }
+}
+
+.btn-green {
+  min-height: 2rem;
+  min-width: 2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(20 83 45 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  opacity: 0.8;
+}
+
+.btn-green:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(21 128 61 / var(--tw-border-opacity));
+  opacity: 1;
+}
+
+.btn-green {
+  &.checked {
+    position: relative;
+  }
+  &.checked {
+    --tw-bg-opacity: 1;
+    background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+  }
+  &.checked {
+    --tw-bg-opacity: 1;
+  }
+  &.checked {
+    opacity: 1;
+  }
+  &.checked {
+    &::after {
+      position: absolute;
+    }
+    &::after {
+      left: 0px;
+    }
+    &::after {
+      top: 0.25rem;
+    }
+    &::after {
+      z-index: 10;
+    }
+    &::after {
+      height: 100%;
+    }
+    &::after {
+      width: 100%;
+    }
+    &::after {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
+    &::after {
+      transform: translateX(-0.05rem);
+      content: '✓';
+    }
+    &::before {
+      position: absolute;
+    }
+    &::before {
+      left: 0px;
+    }
+    &::before {
+      top: 0.625rem;
+    }
+    &::before {
+      z-index: 0;
+    }
+    &::before {
+      height: 100%;
+    }
+    &::before {
+      width: 100%;
+    }
+    &::before {
+      --tw-scale-x: 1.25;
+      --tw-scale-y: 1.25;
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    }
+    &::before {
+      --tw-text-opacity: 1;
+      color: rgb(0 0 0 / var(--tw-text-opacity));
+    }
+    &:hover::before {
+      opacity: 0.5;
+    }
+    &::before {
+      transform: scale(130%) translate(-0.05rem, -0.05rem);
+      content: '✓';
+    }
+  }
+}
+
+.btn-label-lg {
+  margin: 0px;
+  width: 3rem;
+  padding: 0px;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.todo-comp {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  border-radius: 1.5rem;
+  border-width: 2px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(148 163 184 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+  padding-bottom: 0.5rem;
+}
+
+.todo-list {
+  margin-bottom: 0.5rem;
+  display: flex;
+  height: 100%;
+  width: auto;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: scroll;
+}
+
+.todo-item-wrapper {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  height: 4rem;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0px;
+  border-radius: 1rem;
+  border-width: 2px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.todo-item-left,
+  .todo-item-right {
+  display: flex;
+  flex-basis: 3rem;
+  justify-content: center;
+}
+
+.todo-item-middle {
+  width: 100%;
+  & .todo-item-text {
+    box-sizing: border-box;
+  }
+  & .todo-item-text {
+    width: 100%;
+  }
+  & .todo-item-text {
+    border-width: 2px;
+  }
+  & .todo-item-text {
+    --tw-border-opacity: 1;
+    border-color: rgb(3 105 161 / var(--tw-border-opacity));
+  }
+  & .todo-item-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  & .todo-item-text {
+    text-align: left;
+  }
+  & .todo-item-text {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  & .todo-item-text {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  & .todo-item-text {
+    --tw-text-opacity: 1;
+    color: rgb(243 244 246 / var(--tw-text-opacity));
+  }
+  & .todo-item-text {
+    &.complete {
+      --tw-text-opacity: 1;
+      color: rgb(107 114 128 / var(--tw-text-opacity));
+    }
+  }
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.-top-4 {
+  top: -1rem;
+}
+
+.right-9 {
+  right: 2.25rem;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-0 {
+  height: 0px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.basis-20 {
+  flex-basis: 5rem;
+}
+
+.select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.font-sans {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-blue-200 {
+  --tw-text-opacity: 1;
+  color: rgb(191 219 254 / var(--tw-text-opacity));
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.line-through {
+  text-decoration-line: line-through;
+}
+
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+body {
+  background: black;
+}
+
+@keyframes bounce-pause {
+  0% {
+    transform: translateY(0%);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  10% {
+    transform: translateY(-20%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  20% {
+    transform: translateY(0%);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
